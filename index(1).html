@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sai Caterers</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff8ed;color:#35150c}
+header{background:linear-gradient(135deg,#4b0d08,#a91f08,#e6a400);color:#fff;padding:22px 16px;text-align:center}
+header h1{font-size:38px;margin:5px 0;font-weight:900}header p{margin:5px;font-size:18px}
+nav{position:sticky;top:0;z-index:5;background:#24110d;display:flex;justify-content:space-around;padding:10px}
+nav a{color:#fff;text-decoration:none;font-weight:bold;font-size:14px}
+.hero{padding:16px}.hero img{width:100%;max-height:480px;object-fit:cover;border-radius:18px;box-shadow:0 5px 20px #0003}
+.btn{display:inline-block;background:#b51e0b;color:white;padding:13px 20px;border-radius:30px;text-decoration:none;font-weight:bold;margin:6px}
+section{padding:22px 16px;max-width:900px;margin:auto}h2{color:#a7190b;font-size:28px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.card{background:#fff;border-radius:15px;padding:15px;box-shadow:0 3px 12px #0002}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:12px}
+.menu li{padding:7px;border-bottom:1px solid #edd6c5}
+input,textarea,select{width:100%;padding:12px;margin:7px 0;border:1px solid #d5b8a8;border-radius:9px}
+button{border:0;background:#a7190b;color:white;padding:13px 22px;border-radius:25px;font-weight:bold}
+.review{background:#fff;padding:12px;border-radius:12px;margin:10px 0;box-shadow:0 2px 8px #0001}
+footer{background:#24110d;color:white;text-align:center;padding:25px}
+</style>
+</head>
+<body>
+<header>
+  <div>॥ श्री गणेशाय नमः ॥</div>
+  <img src="images/sai_caterers_logo.jpg" alt="Sai Caterers Logo"
+       style="width:100%;max-width:720px;border-radius:18px;margin:8px auto;display:block;box-shadow:0 5px 18px #0005">
+  <p>Pure Veg • Caterers for All Occasions</p>
+  <p>📞 8828612661</p>
+</header>
+<nav>
+<a href="#home">Home</a><a href="#menu">Menu</a><a href="#gallery">Photos</a><a href="#booking">Booking</a><a href="#feedback">Feedback</a><a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+<img src="images/sai_caterers_logo.jpg" alt="Sai Caterers Logo"><br>
+<img src="images/poster1.jpg" alt="Sai Caterers">
+<div style="text-align:center">
+<a class="btn" href="tel:8828612661">📞 Call Now</a>
+<a class="btn" href="https://wa.me/918828612661">💬 WhatsApp</a>
+</div>
+</section>
+
+<section>
+<h2>आमच्या सेवा</h2>
+<div class="cards">
+<div class="card"><h3>🍽️ Catering</h3><p>लग्न, वाढदिवस, साखरपुडा आणि सर्व समारंभांसाठी Catering.</p></div>
+<div class="card"><h3>🥗 Pure Veg</h3><p>स्वच्छता आणि चवीला आमची प्राथमिकता.</p></div>
+<div class="card"><h3>🎉 Events</h3><p>कार्यक्रमानुसार Menu आणि Catering सुविधा.</p></div>
+</div>
+</section>
+
+<section id="menu">
+<h2>विशेष मेनू</h2>
+<div class="card">
+<ul class="menu">
+<li>पुरी</li><li>फुलका रोटी</li><li>गुलाब जामुन</li><li>पनीर अंगारा / पनीर टिक्का मसाला</li>
+<li>व्हेज दिवानी हांडी</li><li>केज कोल्हापुरी</li><li>जीरा राईस</li><li>डाळ तडका</li>
+<li>पापड</li><li>सॅलड</li><li>पाणी बॉटल 200ml</li>
+</ul>
+</div>
+</section>
+
+<section id="gallery">
+<h2>📸 Photo Gallery</h2>
+<div class="gallery">
+<img src="images/poster1.jpg"><img src="images/poster2.jpg"><img src="images/poster3.jpg">
+<img src="images/poster4.jpg"><img src="images/poster5.jpg">
+</div>
+</section>
+
+
+<section id="booking">
+<h2>📅 Booking Form</h2>
+<div class="card">
+<form id="bookingForm">
+<input id="bname" placeholder="ग्राहकाचे नाव" required>
+<input id="bphone" type="tel" placeholder="मोबाईल नंबर" required>
+<input id="bdate" type="date" required>
+<input id="bguests" type="number" min="1" placeholder="किती Guests?" required>
+<select id="bevent" required>
+<option value="">कार्यक्रम निवडा</option>
+<option>लग्न</option><option>साखरपुडा</option><option>वाढदिवस</option>
+<option>गृहप्रवेश</option><option>इतर समारंभ</option>
+</select>
+<textarea id="bmsg" rows="3" placeholder="Menu / विशेष सूचना"></textarea>
+<button type="submit">WhatsApp वर Booking पाठवा</button>
+</form>
+</div>
+</section>
+
+<section id="payment">
+<h2>💳 Payment Options</h2>
+<div class="cards">
+<div class="card"><h3>💳 Credit Card</h3><p>Credit Card Payment Accepted</p></div>
+<div class="card"><h3>💳 Debit Card</h3><p>Debit Card Payment Accepted</p></div>
+<div class="card"><h3>📱 UPI</h3><p>UPI Payment Accepted</p></div>
+</div>
+<p style="text-align:center;font-size:13px">Payment करण्यापूर्वी Sai Caterers कडून Booking/Payment details confirm करा.</p>
+</section>
+
+<section id="feedback">
+<h2>⭐ ग्राहक Feedback</h2>
+<form id="feedbackForm">
+<input id="name" placeholder="तुमचे नाव" required>
+<select id="rating"><option value="5">★★★★★ 5</option><option value="4">★★★★ 4</option><option value="3">★★★ 3</option><option value="2">★★ 2</option><option value="1">★ 1</option></select>
+<textarea id="comment" rows="4" placeholder="तुमचा अनुभव लिहा..." required></textarea>
+<button type="submit">Feedback Submit करा</button>
+</form>
+<div id="reviews"></div>
+</section>
+
+<section id="contact">
+<h2>📞 Contact Us</h2>
+<div class="card">
+<p><b>मोबाईल:</b> 8828612661</p>
+<p><b>पत्ता:</b> Chirag Nagar, Ghatkopar West – 400086</p>
+<p><b>Email:</b> saicaterers1112@gmail.com</p>
+<a class="btn" href="mailto:saicaterers1112@gmail.com">✉️ Email</a>
+<a class="btn" href="https://wa.me/918828612661">💬 WhatsApp</a>
+</div>
+</section>
+
+<footer>
+<p>॥ श्री गणेशाय नमः ॥</p><b>SAI CATERERS</b><br>We Serve Happiness
+</footer>
+
+<script>
+const key="saiReviews";
+function render(){
+ const r=JSON.parse(localStorage.getItem(key)||"[]");
+ document.getElementById("reviews").innerHTML=r.map(x=>`<div class="review"><b>${x.name}</b> <span>${x.rating}</span><p>${x.comment}</p></div>`).join("");
+}
+
+document.getElementById("bookingForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const msg =
+ `*SAI CATERERS - BOOKING ENQUIRY*%0A`+
+ `नाव: ${encodeURIComponent(bname.value)}%0A`+
+ `मोबाईल: ${encodeURIComponent(bphone.value)}%0A`+
+ `कार्यक्रम: ${encodeURIComponent(bevent.value)}%0A`+
+ `दिनांक: ${encodeURIComponent(bdate.value)}%0A`+
+ `Guests: ${encodeURIComponent(bguests.value)}%0A`+
+ `सूचना: ${encodeURIComponent(bmsg.value||"नाही")}`;
+ window.open("https://wa.me/918828612661?text="+msg,"_blank");
+});
+
+const feedbackForm = document.getElementById("feedbackForm");
+feedbackForm.addEventListener("submit",e=>{
+ e.preventDefault();
+ const msg = `*SAI CATERERS - CUSTOMER FEEDBACK*%0Aनाव: ${encodeURIComponent(name.value)}%0ARating: ${encodeURIComponent(rating.value)} / 5%0AFeedback: ${encodeURIComponent(comment.value)}`;
+ const r=JSON.parse(localStorage.getItem(key)||"[]");
+ r.unshift({name:name.value,rating:"★".repeat(+rating.value),comment:comment.value});
+ localStorage.setItem(key,JSON.stringify(r.slice(0,20)));
+ e.target.reset(); render();
+ window.open("https://wa.me/918828612661?text="+msg,"_blank");
+});
+
+render();
+</script>
+</body>
+</html>
